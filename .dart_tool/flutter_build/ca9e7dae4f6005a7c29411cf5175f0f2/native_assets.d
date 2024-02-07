@@ -1,0 +1,1 @@
+ /Users/edu/Documents/Portafolio/fulltime_force/.dart_tool/flutter_build/ca9e7dae4f6005a7c29411cf5175f0f2/native_assets.yaml: 
