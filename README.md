@@ -25,16 +25,16 @@ Clone this repository to your local machine:
 ## Steps to clone this repo
 
 Copy code
-git clone https://github.com/your-username/fulltime-force-app.git
+## git clone https://github.com/your-username/fulltime-force-app.git
 Navigate to the project directory:
 
 Copy code
-cd fulltime-force-app
+## cd fulltime-force-app
 Run the following command to get the necessary dependencies:
 
 Copy code
-flutter pub get
+## flutter pub get
 Finally, start the application by running:
 
 Copy code
-flutter run
+## flutter run
