@@ -35,6 +35,7 @@ class _HomePageState extends State<HomePage> {
             ? const LoaderWidget()
             : errorMessage == null
                 ? CommitsListWidget(
+                    onRefresh: () => initData(),
                     commitsList: commits,
                   )
                 : Center(
@@ -45,7 +46,7 @@ class _HomePageState extends State<HomePage> {
                   ));
   }
 
-  void initData() async {
+  Future<void> initData() async {
     DataProvider dataProvider = DataProvider();
 
     var res = await dataProvider.getCommits();
@@ -54,6 +55,7 @@ class _HomePageState extends State<HomePage> {
     } else {
       errorMessage = dataProvider.errorMessage;
     }
+
     isLoading = false;
     setState(() {});
   }
